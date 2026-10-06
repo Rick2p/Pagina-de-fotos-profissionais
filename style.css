@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.pagina {
+    width: 640px;
+    margin: 106px auto 0 auto;
+}
+
+header {
+    height: 43px;
+    background: #211d7b;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 220px;
+    padding-left: 2px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+}
+
+nav {
+    width: 420px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 9px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    height: 232px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.foto-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777777;
+    font-size: 10px;
+}
+
+.hero-conteudo {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 73px 14px 0 14px;
+}
+
+.hero h1 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 9px;
+    line-height: 1.18;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 9px;
+    padding: 6px 20px;
+    background: #211d7b;
+    color: white;
+    text-decoration: none;
+    font-size: 9px;
+}
+
+.sobre {
+    height: 111px;
+    background: #211d7b;
+    color: white;
+    text-align: center;
+    padding: 8px 13px 0 13px;
+}
+
+.sobre h2 {
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.sobre p {
+    font-size: 9px;
+    line-height: 1.15;
+}
+
+.contratar {
+    background: white;
+    color: #555555;
+    margin-top: 9px;
+    padding: 5px 16px;
+}
+
+.servicos {
+    height: 226px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.servicos h2 {
+    font-size: 13px;
+    margin-bottom: 37px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 16px;
+    padding: 0 26px;
+}
+
+.servicos article {
+    text-align: center;
+}
+
+.icone {
+    width: 55px;
+    height: 45px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    font-size: 8px;
+}
+
+.icone img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.servicos h3 {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.servicos p {
+    font-size: 9px;
+    line-height: 1.15;
+}
+
+.fotos {
+    text-align: center;
+    padding-bottom: 29px;
+}
+
+.fotos h2 {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 640px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria div {
+    height: 115px;
+    background: #dddddd;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555555;
+    font-size: 9px;
+}
+
+footer {
+    min-height: 105px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 39px;
+}
+
+.footer-coluna {
+    font-size: 9px;
+    line-height: 1.9;
+}
+
+.contato {
+    padding-top: 8px;
+}
+
+.companhia {
+    padding: 5px 0 0 45px;
+}
+
+.companhia h3 {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.companhia p {
+    line-height: 1.3;
+}
+
+.redes {
+    margin-top: 9px;
+    font-size: 13px;
+}
+
+.rodape {
+    height: 25px;
+    background: #211d7b;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    padding-top: 2px;
+    line-height: 10px;
+}
+
+.rodape a {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .pagina {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header {
+        height: auto;
+        min-height: 43px;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 12px;
+    }
+
+    .logo {
+        width: auto;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .hero {
+        height: 260px;
+    }
+
+    .servicos {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+    }
+
+    .galeria {
+        width: 100%;
+    }
+
+    footer {
+        padding: 0 20px;
+    }
+
+    .companhia {
+        padding-left: 15px;
+    }
+}
